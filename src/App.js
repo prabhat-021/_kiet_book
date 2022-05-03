@@ -1,10 +1,10 @@
-
+import "./component/loginpage.css";
 import './App.css';
-
+import Loginpage from './component/Loginpage';
 function App() {
   return (
     <div className="App">
-    <h1> hiii </h1>
+   <Loginpage />
     </div>
   );
 }
