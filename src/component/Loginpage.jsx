@@ -1,8 +1,8 @@
 import React from 'react';
-
+import "./loginpage.css";
 const Loginpage = () => {
   return (
-    <div>
+    <div className='body1'>
       <div className="login-page">
       <div className="form">
         <div className="login">
