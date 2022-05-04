@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const loginpage = () => {
+const Loginpage = () => {
   return (
     <div>
       <div className="login-page">
@@ -8,14 +8,16 @@ const loginpage = () => {
         <div className="login">
           <div className="login-header">
             <h3>LOGIN</h3>
+
             <p>Please enter your credentials to login.</p>
+
           </div>
         </div>
         <form className="login-form">
           <input type="text" placeholder="username"/>
           <input type="password" placeholder="password"/>
           <button>login</button>
-          <p className="message">Not registered? <a href="#">Create an account</a></p>
+          <button className='btn1'>SIGN UP</button>
         </form>
       </div>
     </div>
@@ -23,4 +25,4 @@ const loginpage = () => {
   )
 }
 
-export default loginpage;
+export default Loginpage;
