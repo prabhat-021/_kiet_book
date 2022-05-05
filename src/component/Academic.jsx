@@ -1,7 +1,14 @@
-import React from 'react'
-import "../component/Academic.css"
+import React from 'react';
+import "../component/Academic.css";
 import GroupsIcon from '@mui/icons-material/Groups';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import CodeIcon from '@mui/icons-material/Code';
+import {useHistory } from 'react-router-dom';
 const Academic = () => {
+
+let history=useHistory();
+
+
   return ( 
     <div className='body'>
     <div className="container">
@@ -9,14 +16,18 @@ const Academic = () => {
         <div className="face face1">
             <div className="content">
                 <div className="icon">
-                    <GroupsIcon fontSize='large' />
+                    <GroupsIcon fontSize='large' className='i' />
                 </div>
             </div>
         </div>
         <div className="face face2">
             <div className="content">
                 <h3>
-                    <a  >_CLUBS</a>
+                   <a onClick={() =>{
+                     history.push("/clubs");
+                     }}
+                     >CLUB
+                     </a>
                 </h3>
                 <p>This is where I network and build my professional protfolio.</p>
             </div>
@@ -26,7 +37,7 @@ const Academic = () => {
         <div className="face face1">
             <div className="content">
                 <div className="icon">
-                    <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                    <MenuBookIcon fontSizge='large' className='i'/>
                 </div>
             </div>
         </div>
@@ -43,7 +54,7 @@ const Academic = () => {
         <div className="face face1">
             <div className="content">
                 <div className="icon">
-                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <CodeIcon fontSize='large' className='i'/>
                 </div>
             </div>
         </div>
